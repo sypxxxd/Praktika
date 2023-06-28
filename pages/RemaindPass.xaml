@@ -1,0 +1,33 @@
+﻿<Window x:Class="Vova.pages.RemaindPass"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Vova.pages"
+        mc:Ignorable="d"
+        Title="RemaindPass" Height="450" Width="800" Background="#004165">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock VerticalAlignment="Center" Foreground="White" FontSize="30">Введите данные</TextBlock>
+        <TextBlock Grid.Row="1" FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Right">Фамилия</TextBlock>
+        <TextBox Grid.Row="1" Grid.Column="1" Height="20" Name="name"/>
+        <TextBlock Grid.Row="2" FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Right">Табельный номер</TextBlock>
+        <TextBox Grid.Row="2" Grid.Column="1" Height="20" Name="TabNum"/>
+        <TextBlock Grid.Row="3" FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Right">Должность</TextBlock>
+        <TextBox Grid.Row="3" Grid.Column="1" Height="20" Name="Position"/>
+        <TextBlock Grid.Row="4" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Right">Дата трудоустройства</TextBlock>
+        <TextBox Grid.Row="4" Grid.Column="1" Height="20"/>
+        <Button Click="Show_Click" Content="Показать" Grid.Column="1" Grid.Row="5"/>
+    </Grid>
+</Window>
